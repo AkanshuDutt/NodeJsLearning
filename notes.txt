@@ -1,0 +1,22 @@
+  import react { usestate , usecontext} from react
+  
+
+const login =()=>{
+const [username ,setusername]=usestate('')
+const [password ,setpassword]=usestate('')
+const handlesubmit=()=>{
+
+}
+return(
+    <>
+    <h2>login</h2>
+     <div>
+ <input type="text" placeholder="Enter username"  value={username} onclick={(e)=>setusername(e.target.value)}/>
+ <input type="text" placeholder ="Enter password" value={password} onclick ={(e)=>setpassword(e.target.value)}
+  <button onclick{handlesubmit}>submit </button>
+ </div>
+    </>
+)
+
+
+  }
